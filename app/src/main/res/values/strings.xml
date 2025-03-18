@@ -1,0 +1,11 @@
+
+<resources>
+    <string name="app_name">Diagnóstico de Aprendizaje</string>
+    <string name="welcome_message">¡Prepárate para el reto! Descubre tus fortalezas y áreas de mejora.</string>
+    <string name="start_button">¡Comenzar Diagnóstico!</string>
+    <string name="math">Matemáticas</string>
+    <string name="reading">Lectura Crítica</string>
+    <string name="science">Ciencias</string>
+    <string name="social">Sociales</string>
+</resources>
+

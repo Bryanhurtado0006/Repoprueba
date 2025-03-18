@@ -1,0 +1,92 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    android:gravity="center">
+
+    <!-- Encabezado -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Descubre tu estilo de aprendizaje!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <!-- Personaje Animado -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/fondo"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Barra de Progreso -->
+    <ProgressBar
+        android:id="@+id/progress_test"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="304dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#656B71"
+        android:max="100"
+        android:progress="30" />
+
+    <!-- Tarjeta de Pregunta -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es tu forma favorita de aprender?"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_visual"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="Viendo imágenes o videos" />
+
+            <RadioButton
+                android:id="@+id/rb_auditivo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Escuchando explicaciones" />
+
+            <RadioButton
+                android:id="@+id/rb_kinestesico"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Haciendo experimentos o ejercicios" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Botón para responder -->
+    <Button
+        android:id="@+id/btn_next_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente Pregunta"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
